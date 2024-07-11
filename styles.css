@@ -556,4 +556,19 @@ main {
     padding: 0;
     width: 100%;
   }
+
+  #footer nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .footer-nav-links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-nav-links li {
+    margin: 0.5rem 0; /* Space out the links vertically */
+  }
 }
