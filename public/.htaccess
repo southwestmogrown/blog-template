@@ -1,5 +1,5 @@
 RewriteEngine On
-RewriteBase /
+RewriteBase [/](https://missouri-springs-and-caves.onrender.com/)
 
 # Redirect all requests to index.php except existing files or directories
 
