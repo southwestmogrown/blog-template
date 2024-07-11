@@ -5,6 +5,10 @@
   padding: 0;
 }
 
+html {
+  min-width: 100vw;
+}
+
 body {
   font-family: "Lato", sans-serif;
   margin: 0;
@@ -12,6 +16,7 @@ body {
   background-color: #fff0c2;
   color: #333;
   padding-top: 100px;
+  min-width: 100vw;
 }
 
 a {
@@ -423,6 +428,20 @@ main {
   margin-bottom: 10px;
 }
 
+.post-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+#post {
+  flex: 3;
+}
+
+#sidebar {
+  flex: 1;
+}
+
 @media (max-width: 768px) {
   .single-post {
     padding: 0 10px;
@@ -439,18 +458,117 @@ main {
   .single-post h2 {
     font-size: 1.5rem;
   }
+
+  .post-container {
+    flex-direction: column;
+  }
+
+  #sidebar {
+    order: 2; /* Move sidebar to the bottom */
+  }
+
+  #post {
+    order: 1; /* Ensure main post content is above sidebar */
+  }
 }
 
 @media (max-width: 576px) {
+  .post-container {
+    padding: 0;
+    margin: 0;
+  }
+
+  .single-post {
+    padding: 0 10px;
+    width: 100%;
+  }
   .post-hero {
-    height: 150px;
+    height: 200px;
+    padding: 0;
+    width: 100%;
   }
 
   .post-hero h2 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
 
   .post-content p {
     font-size: 0.9rem;
+    width: 100%;
+  }
+
+  /* Reduce margin and padding */
+  main {
+    padding: 0 10px;
+  }
+
+  .post-list {
+    margin: 0;
+    padding: 0;
+  }
+
+  .post-card {
+    margin: 0;
+    padding: 10px;
+  }
+
+  .post-card img {
+    height: auto;
+  }
+
+  /* Header styles for hamburger menu */
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: none; /* Hide links initially */
+    flex-direction: column;
+    width: 100%;
+    background-color: #2e8b57;
+  }
+
+  .nav-links a {
+    padding: 15px;
+    border-top: 1px solid #d4d4d4;
+  }
+
+  .nav-links a:hover {
+    background-color: #45a049;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-icon,
+  .search-bar {
+    flex: 1;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .search-bar {
+    display: none;
   }
 }

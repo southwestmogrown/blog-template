@@ -16,16 +16,21 @@
             <div class="nav-icon">
                 <a href="index.php"><img src="images/logo.png" alt="Home"></a>
             </div>
+            <div class="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="nav-links">
+                <a href="index.php">Home</a>
+                <a href="caves.php">Caves</a>
+                <a href="springs.php">Springs</a>
+            </div>
             <div class="search-bar">
                 <form action="search.php" method="GET">
                     <input type="text" name="query" placeholder="Search...">
                     <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
-            </div>
-            <div class="nav-links">
-                <a href="home.php">Home</a>
-                <a href="caves.php">Caves</a>
-                <a href="springs.php">Springs</a>
             </div>
         </nav>
     </header>

@@ -10,4 +10,11 @@ document.addEventListener("DOMContentLoaded", function () {
       footer.classList.add("show"); // Show the footer
     }
   });
+
+  const hamburger = document.querySelector(".hamburger");
+  const navLinks = document.querySelector(".nav-links");
+
+  hamburger.addEventListener("click", function () {
+    navLinks.classList.toggle("active");
+  });
 });
