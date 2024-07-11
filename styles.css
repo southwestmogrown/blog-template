@@ -1,0 +1,456 @@
+/* styles.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff0c2;
+  color: #333;
+  padding-top: 100px;
+}
+
+a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: #2b474f; /* Deep hunter green */
+  color: #80ae95;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Fixed position */
+  top: 0; /* Stick to the top */
+  left: 0;
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it's above other content */
+  max-height: 150px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header .nav-icon img {
+  width: 150px;
+}
+
+header .search-bar form {
+  display: flex;
+  align-items: center;
+}
+
+header .search-bar input {
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  width: 200px;
+  transition: width 0.4s ease;
+}
+
+header .search-bar input:focus {
+  width: 300px;
+}
+
+header .search-bar button {
+  background-color: #80ae95;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin-left: 10px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+header .search-bar button:hover {
+  background-color: #5b7e6a; /* Darker shade of primary color on hover */
+}
+
+header .nav-links a {
+  margin: 0 15px;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #80ae95;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+header .nav-links a:hover {
+  color: #5b7e6a;
+}
+
+#hero {
+  background: url("images/hero.jpg") no-repeat center center/cover;
+  height: 400px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.658); /* Semi-transparent background */
+  border-radius: 8px;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px;
+}
+
+#intro {
+  margin-top: 3rem;
+  background-color: #2b474f; /* Dark background */
+  color: #f5f5f5; /* Light text */
+  padding: 40px 20px; /* Padding around the content */
+  text-align: center; /* Center-align the text */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro-content {
+  max-width: 800px; /* Limit content width for readability */
+  margin: 0 auto; /* Center content horizontally */
+  line-height: 1.6; /* Line height for readability */
+}
+
+.intro-content p {
+  margin-bottom: 20px; /* Bottom margin between paragraphs */
+  font-size: 18px; /* Font size */
+}
+
+.intro-content p:first-child {
+  margin-top: 0; /* Remove top margin from first paragraph */
+}
+
+#latest-posts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+#latest-posts h2 {
+  margin: 40px 0;
+}
+
+.post-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Adjust gap between cards */
+}
+
+.post-card {
+  max-width: 300px;
+  background: #80ae95;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+}
+
+.post-card a {
+  color: #333;
+  text-decoration: none;
+}
+
+.post-card img {
+  max-width: 100%;
+  height: 300px;
+  display: block;
+  border-radius: 8px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.post-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.post-card p {
+  font-size: 1rem;
+  line-height: 1.4;
+  color: #464646;
+}
+
+/* Truncate long content */
+.post-card p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Number of lines to show before ellipsis */
+  -webkit-box-orient: vertical;
+}
+
+#caves,
+#springs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topic-title {
+  display: flex;
+  justify-content: center;
+}
+
+#post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+  padding-bottom: 100px; /* Add padding to prevent footer overlap */
+}
+
+.post-hero {
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.post-hero h2 {
+  font-size: 2rem;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Semi-transparent background for readability */
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+#post {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.post-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: 20px;
+}
+
+.post-content {
+  flex: 1;
+  padding-right: 20px; /* Space between main content and sidebar */
+}
+
+#sidebar {
+  width: 300px; /* Adjust sidebar width as needed */
+}
+
+#sidebar h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.related-posts {
+  list-style-type: none;
+  padding: 0;
+}
+
+.related-posts li {
+  margin-bottom: 10px;
+}
+
+.related-posts a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.related-posts a:hover {
+  color: #4caf50;
+}
+
+.single-post {
+  max-width: 800px;
+  width: 100%;
+  text-align: center; /* Center text */
+}
+
+.post-content {
+  text-align: left; /* Ensure content text is left-aligned */
+  line-height: 1.6;
+  margin-top: 20px;
+  margin-bottom: 40px; /* Add margin at the bottom */
+}
+
+.post-content p {
+  margin-bottom: 20px; /* Add separation between paragraphs */
+}
+
+#search-results {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#search-results h2 {
+  margin-bottom: 3rem;
+}
+
+.search-result {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-result h3 {
+  margin-top: 0;
+}
+
+.search-result img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+  border-radius: 8px;
+}
+
+#footer.show {
+  opacity: 1; /* Show the footer */
+  visibility: visible; /* Make footer visible */
+  transform: translateY(0); /* Move footer into viewport */
+}
+
+#footer {
+  background-color: #80ae95; /* Example background color */
+  color: white; /* Example text color */
+  padding: 10px 0; /* Adjust vertical padding */
+  text-align: center; /* Center-align text */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-logo {
+  width: 100%;
+  /* margin-right: 15rem; Adjust margin as needed */
+}
+
+#footer nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  list-style-type: none; /* Remove bullet points */
+  /* margin-left: 400px; */
+}
+
+#footer nav li {
+  display: inline-block;
+  margin: 0;
+}
+
+#footer nav a {
+  color: rgb(92, 92, 92);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+#footer nav a:hover {
+  color: #d4d4d4;
+}
+
+#sidebar {
+  width: 300px; /* Adjust sidebar width as needed */
+  margin-left: 20px;
+}
+
+#sidebar h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  .single-post {
+    padding: 0 10px;
+  }
+
+  .post-hero {
+    height: 200px;
+  }
+
+  .post-hero h2 {
+    font-size: 1.5rem;
+  }
+
+  .single-post h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .post-hero {
+    height: 150px;
+  }
+
+  .post-hero h2 {
+    font-size: 1.2rem;
+  }
+
+  .post-content p {
+    font-size: 0.9rem;
+  }
+}
