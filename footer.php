@@ -14,9 +14,9 @@
                 <li><a href="springs.php">Springs</a></li>
             </ul>
             <ul>
-                <li><a href="https://github.com/yourusername" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/yourusername" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                <li><a href="https://yourportfolio.com" target="_blank"><i class="fa-solid fa-user-tie"></i></a></li>
+                <li><a href="https://github.com/southwestmogrown" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/shane-wilkey-b5822b210" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://shanewilkey.com" target="_blank"><i class="fa-solid fa-user-tie"></i></a></li>
             </ul>
         </nav>
     </div>
