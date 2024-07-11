@@ -14,9 +14,9 @@
                 <li><a href="springs.php">Springs</a></li>
             </ul>
             <ul>
-                <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
-                <li><a href="https://www.linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
-                <li><a href="https://yourportfolio.com" target="_blank">Portfolio</a></li>
+                <li><a href="https://github.com/yourusername" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/yourusername" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="https://yourportfolio.com" target="_blank"><i class="fa-solid fa-user-tie"></i></a></li>
             </ul>
         </nav>
     </div>
